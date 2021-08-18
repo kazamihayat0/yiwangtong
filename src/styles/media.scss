@@ -1,0 +1,140 @@
+.avue-left,
+.avue-header,
+.avue-top,
+.avue-logo,
+.avue-layout
+.login-logo,
+.avue-main {
+  transition: all .3s;
+}
+
+.avue-contail {
+  width: 100%;
+  height: 100%;
+  background: #f0f2f5;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+.avue-left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 1025;
+}
+
+.avue--collapse {
+  .avue-left,
+  .avue-logo {
+    width: 60px;
+  }
+
+  .avue-header {
+    padding-left: 60px;
+  }
+
+  .avue-main {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+}
+
+.avue-header {
+  padding-left: 200px;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.avue-main {
+  position: absolute;
+  left: 200px;
+  padding: 0;
+  // padding-bottom: 20px;
+  width: calc(100% - 200px);
+  height: calc(100% - 34px);
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.5s;
+  background: #f0f2f5;
+  z-index: 1026;
+
+  &--fullscreen {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.avue-view {
+  padding: 0 10px !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.avue-footer {
+  margin: 0 auto;
+  padding: 0 22px;
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    margin-left: -50px;
+  }
+
+  .copyright {
+    color: #666;
+    line-height: 1.5;
+    font-size: 12px;
+  }
+}
+
+.avue-shade {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 1024;
+
+  &--show {
+    display: block;
+  }
+}
+
+// @media (min-width: 1024px){
+//   html{font-size: 18px}
+//   } /*>=1024的设备*/
+  
+//   @media (min-width: 1100px) {
+//     html{font-size: 86px;}
+//   } /*>=1024的设备*/
+//   @media (min-width: 1280px) {
+//     html{font-size: 86px;}
+//   } 
+  
+//   @media (min-width: 1366px) {
+//     html{font-size: 86px;}
+//   }  
+  
+//   @media (min-width: 1440px) {
+//     html{font-size: 86px;}
+//   } 
+  
+//   @media (min-width: 1680px) {
+//     html{font-size: 100px;}
+//   } 
+//   @media (min-width: 1920px) {
+//     html{font-size: 115px;}
+//   }
+//   body{
+//     font-size: 0.14rem;
+//   }
